@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 8</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 8</h2>
+            <p>
+                Escribe una función que permita generar un número aleatorio entero entre un intervalo. Por ejemplo azar(-5, 10). Salida: 3            </p>
+            <div class="codigo">
+                <p>
+                    const min = prompt('ingresa el valor mínimo');
+                </p>
+                <p>
+                    const max = prompt('ingresa el valor máximo');
+                </p>
+                <p>
+                    function getRandom(min,max){
+                </p>
+                <p>
+                    return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    console.log(getRandom(min,max));
+                </p>                
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-8.js"></script>
+</body>
+</html>

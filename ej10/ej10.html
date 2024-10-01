@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 10</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 10</h2>
+            <p>
+                Crea una función que encuentre el número más grande en un array.
+
+                Usa el método Math.max() y el operador ... para "expandir" el array
+            </p>
+            <div class="codigo">
+                <p>
+                    const arr = [1,2,3,4,5,6,7];
+                </p>
+                <p>
+                    let max = arr[0];
+                </p>
+                <p>
+                    for(let i = 1; i < arr.length; i++){
+                </p>
+                <p>
+                    if(arr[i] > max) max=arr[i]; 
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    console.log(max);
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-10.js"></script>
+</body>
+</html>

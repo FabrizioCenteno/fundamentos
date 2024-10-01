@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 14</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 14</h2>
+            <p>
+                Verificar si una palabra es un palíndromo
+                Escribe una función que verifique si una palabra es un palíndromo (es decir, si se lee igual al derecho y al revés). 
+            </p>
+            <div class="codigo">
+                <p>
+                    const palabra = prompt('ingresa una palabra');
+                </p>
+                <p>
+                    let laVuelta = '';
+                </p>
+                <p>
+                    function comprobar(palabra){
+                </p>
+                <p>
+                    for( let i = palabra.length - 1; i >= 0; i--){
+                </p>
+                <p>
+                    laVuelta += palabra[i];
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    console.log(`${palabra} == ${laVuelta} ? ${palabra == laVuelta ? 'son iguales' : 'no son iguales'}`);
+                </p> 
+                <p>
+                }
+                </p>
+                <p>
+                    comprobar(palabra);
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-14.js"></script>
+</body>
+</html>

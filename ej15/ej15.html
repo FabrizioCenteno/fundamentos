@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 15</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 15</h2>
+            <p>
+                Escribe un programa que imprima todos los números primos entre 1 y un número dado por el usuario. 
+            </p>
+            <div class="codigo">
+                <p>
+                    const max = prompt('número máximo');
+                </p>
+                <p>
+                    function esPrimo(maximo){
+                </p>
+                <p>
+                    for(let i = 1; i <= maximo; i++) {
+                </p>
+                <p>
+                    let primo = true;
+                </p>
+                <p>
+                    if(i < 2){
+                </p>
+                <p>
+                    primo = false;
+                </p>
+                <p>
+                }else{;
+                </p>
+                <p>
+                    for(let j = 2; j <= Math.sqrt(i); j++){
+                </p>
+                <p>
+                    if(i % j === 0){
+                </p>
+                <p>
+                    primo = false;
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    console.log(`el número ${i} ${primo? 'es primo':'no es primo'}`);
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    esPrimo(max);
+                </p>    
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-15.js"></script>
+</body>
+</html>

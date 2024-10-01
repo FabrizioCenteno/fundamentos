@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 2</h2>
+            <p>
+                Declara un array de 100 números. Rellena el array con valores al azar. Muestra el contenido console.table. Realiza un filtrado de datos. Por ejemplo mostrando los valores de un determinado rango 
+            </p>
+            <div class="codigo">
+                <p>
+                    const arr = [];
+                </p>
+                <p>
+                    for(let i = 0; i < 100; i++){
+
+                </p>
+                <p>
+                    arr[i] = Math.round(Math.random() * 10);
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    console.table(arr);
+                </p>
+                <p>
+                    const result  = arr.filter( n => n > 5 );
+                </p>
+                <p>
+                console.table(result);
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-2.js"></script>
+</body>
+</html>

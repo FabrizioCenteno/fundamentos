@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 11</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 11</h2>
+            <p>
+                Escribe un programa que genere 100 números del 1 al 20. Debe mostrar la cuenta de los números que al menos han aparecido una vez. 
+            </p>
+            <div class="codigo">
+                <p>
+                    const arr= [];
+                </p>
+                <p>
+                    function getRandom(min,max){
+                </p>
+                <p>
+                    return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                    for(let i = 0; i < 100; i++) arr.unshift(getRandom(1,20));
+                </p>
+                <p>
+                    console.log(arr);
+                </p>
+                <p>
+                    let unicos = new Set(arr);
+                </p>
+                <p>
+                    console.log(unicos);
+                </p>
+                <p>
+                    let contador = 0;
+                </p>
+                <p>
+                    for(let unico of unicos){
+                </p>
+                <p>
+                    for(let i = 0;i < arr.length; i++){
+                </p>
+                <p>
+                    if(unico == arr[i]) contador++;
+                </p>
+                <p>
+                }
+                </p>
+                <p>
+                     console.log(`número: ${unico} | contador: ${contador}`);
+                </p>
+                <p>
+                    contador = 0;
+                </p>
+                <p>
+                }
+                </p>
+ 
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-11.js"></script>
+</body>
+</html>

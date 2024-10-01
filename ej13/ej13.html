@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>ejercicio 13</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <h1>Fundamentos: Ejercicios JavaScript</h1>
+        </a>
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 13</h2>
+            <p>
+                Escribe un programa que cuente cuántas palabras tiene una frase ingresada por el usuario.
+            </p>
+            <div class="codigo">
+                <p>
+                    const frase = prompt('ingresa una frase');
+                </p>
+                <p>
+                    const palabras = frase.split(" ");
+                </p>
+                <p>
+                    console.log("la frase \"" + frase + "\" tiene " + palabras.length + " palabras");
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="ejercicio-13.js"></script>
+</body>
+</html>
