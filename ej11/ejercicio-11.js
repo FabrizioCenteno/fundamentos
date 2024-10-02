@@ -30,6 +30,10 @@
 //     return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
 // }
 
+const codeDocument = document.querySelector('.codigo');
+codeDocument.innerHTML = `
+<pre>
+
 const arr= [];
 
 // utilidades
@@ -38,6 +42,29 @@ function getRandom(min,max){
 }
 
 // rellenando el array arr
+
+for(let i = 0; i < 100; i++) arr.unshift(getRandom(1,20));
+console.log(arr);
+
+const contadores = new Array(20).fill(0);
+
+for(let i = 0;  i < arr.length; i++){
+    contadores[arr[i-1]]++;
+}
+console.log(contadores);
+</pre>
+
+`;
+
+const arr= [];
+
+// utilidades
+function getRandom(min,max){
+    return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+}
+
+// rellenando el array arr
+
 for(let i = 0; i < 100; i++) arr.unshift(getRandom(1,20));
 console.log(arr);
 

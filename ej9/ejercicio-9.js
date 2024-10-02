@@ -1,5 +1,17 @@
 // ejercicio 9
 
+const codeDocument = document.querySelector('.codigo');
+codeDocument.innerHTML = `
+<pre>
+
+const arr = prompt('ingresa la palabra pa darle vuelta');
+function revertirCadena(cadena) {
+    return cadena.split('').reverse().join('');
+}
+revertirCadena(arr);
+</pre>
+`;
+
 const arr = prompt('ingresa la palabra pa darle vuelta');
 // let resultado = '';
 
@@ -11,3 +23,4 @@ const arr = prompt('ingresa la palabra pa darle vuelta');
 function revertirCadena(cadena) {
     return cadena.split('').reverse().join('');
 }
+revertirCadena(arr);
